@@ -1,0 +1,331 @@
+From MAILER-DAEMON  Fri May  8 03:24:13 2020
+Return-Path: <>
+X-Original-To: www-data@atomic-nuclear.site
+Delivered-To: www-data@atomic-nuclear.site
+Received: by Production-Server (Postfix)
+        id BAA9BC39AC; Fri,  8 May 2020 03:24:12 +0530 (IST)
+Date: Fri,  8 May 2020 03:24:12 +0530 (IST)
+From: MAILER-DAEMON@atomic-nuclear.site (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: www-data@atomic-nuclear.site
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+        boundary="59895C39AB.1588888452/Production-Server"
+Message-Id: <20200507215412.BAA9BC39AC@Production-Server>
+
+This is a MIME-encapsulated message.
+
+--59895C39AB.1588888452/Production-Server
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host Production-Server.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<admin@admin.com>: mail for admin.com loops back to myself
+
+--59895C39AB.1588888452/Production-Server
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; Production-Server
+X-Postfix-Queue-ID: 59895C39AB
+X-Postfix-Sender: rfc822; www-data@atomic-nuclear.site
+Arrival-Date: Fri,  8 May 2020 03:24:12 +0530 (IST)
+
+Final-Recipient: rfc822; admin@admin.com
+Original-Recipient: rfc822;admin@admin.com
+Action: failed
+Status: 5.4.6
+Diagnostic-Code: X-Postfix; mail for admin.com loops back to myself
+
+--59895C39AB.1588888452/Production-Server
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <www-data@atomic-nuclear.site>
+Received: by Production-Server (Postfix, from userid 33)
+        id 59895C39AB; Fri,  8 May 2020 03:24:12 +0530 (IST)
+To: admin@admin.com
+Subject: =?UTF-8?B?R2V0U2ltcGxlIFNldHVwIENvbXBsZXRl?=
+X-PHP-Originating-Script: 33:basic.php
+"MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+From: noreply@localhost
+Reply-To: noreply@localhost
+Message-Id: <20200507215412.59895C39AB@Production-Server>
+Date: Fri,  8 May 2020 03:24:12 +0530 (IST)
+
+
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+        <style>
+         table td p {margin-bottom:15px;}
+         a img {border:none;}
+        </style>
+        </head>
+        <body style="padding:0;margin:0;background: #f3f3f3;font-family:arial, 'helvetica neue', helvetica, serif" >
+        <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%" style="padding: 0 0 35px 0; background: #f3f3f3;">
+        <tr>
+            <td align="center" style="margin: 0; padding: 0;">
+              <center>
+                <table border="0" cellpadding="0" cellspacing="0" width="580" style="border-radius:3px;">
+                                                <tr>
+                                                        <th style="padding:15px 0 15px 20px;text-align:left;vertical-align:top;background:#171E25;border-radius:4px 4px 0 0;" >
+                                                                <a href="http://get-simple.info/"><img src="http://get-simple.info/GSSW/gssw_assets/images/logo.png" alt="GetSimple CMS"></a>
+                                                        </th>
+                                                </tr>
+                                                <tr>
+                                                        <td style="background:#fff;border-bottom:1px solid #e1e1e1;border-right:1px solid #e1e1e1;border-left:1px solid #e1e1e1;font-size:13px;font-family:arial, helvetica, sans-serif;padding:20px;line-height:22px;" >
+                                                                <p>Your username is: <strong>admin</strong><br>Your new password is: <strong>YQaqTX</strong><br>Login here: <a href="http://localhost/cms/admin/">http://localhost/cms/admin/</a></p><p><em>Thank you for using GetSimple!</em></p>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td style="padding-top:10px;font-size:10px;color:#aaa;line-height:14px;font-family:arial, 'helvetica neue', helvetica, serif" >
+                                                                <p class="meta">This is a system-generated email, please do not reply to it. For help or questions about GetSimple, please visit our <a href="http://get-simple.info/" style="color:#aaa;" >website</a>.<br />&copy; 2020 GetSimple CMS. All Rights Reserved.&nbsp;<a href="http://get-simple.info/start/privacy" style="color:#aaa;" >Privacy Policy</a>. </p>
+                                                        </td>
+                                                </tr>
+                                        </table>
+                                </center>
+                        </td>
+                </tr>
+        </table>
+        </body>
+        </html>
+
+
+--59895C39AB.1588888452/Production-Server--
+
+From MAILER-DAEMON  Thu May 14 16:57:28 2020
+Return-Path: <>
+X-Original-To: www-data@atomic-nuclear.site
+Delivered-To: www-data@atomic-nuclear.site
+Received: by Production-Server (Postfix)
+        id 43EDDC3A80; Thu, 14 May 2020 16:57:28 +0530 (IST)
+Date: Thu, 14 May 2020 16:57:28 +0530 (IST)
+From: MAILER-DAEMON@atomic-nuclear.site (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: www-data@atomic-nuclear.site
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+        boundary="89728C3A7F.1589455648/Production-Server"
+Message-Id: <20200514112728.43EDDC3A80@Production-Server>
+
+This is a MIME-encapsulated message.
+
+--89728C3A7F.1589455648/Production-Server
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host Production-Server.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<admin@atomic-nuclear.site>: unknown user: "admin"
+
+--89728C3A7F.1589455648/Production-Server
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; Production-Server
+X-Postfix-Queue-ID: 89728C3A7F
+X-Postfix-Sender: rfc822; www-data@atomic-nuclear.site
+Arrival-Date: Thu, 14 May 2020 16:57:27 +0530 (IST)
+
+Final-Recipient: rfc822; admin@atomic-nuclear.site
+Original-Recipient: rfc822;admin@atomic-nuclear.site
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "admin"
+
+--89728C3A7F.1589455648/Production-Server
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <www-data@atomic-nuclear.site>
+Received: by Production-Server (Postfix, from userid 33)
+        id 89728C3A7F; Thu, 14 May 2020 16:57:27 +0530 (IST)
+To: admin@atomic-nuclear.site
+Subject: =?UTF-8?B?R2V0U2ltcGxlIFNldHVwIENvbXBsZXRl?=
+X-PHP-Originating-Script: 33:basic.php
+"MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+From: admin@example.com
+Reply-To: admin@example.com
+Message-Id: <20200514112727.89728C3A7F@Production-Server>
+Date: Thu, 14 May 2020 16:57:27 +0530 (IST)
+
+
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+        <style>
+         table td p {margin-bottom:15px;}
+         a img {border:none;}
+        </style>
+        </head>
+        <body style="padding:0;margin:0;background: #f3f3f3;font-family:arial, 'helvetica neue', helvetica, serif" >
+        <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%" style="padding: 0 0 35px 0; background: #f3f3f3;">
+        <tr>
+            <td align="center" style="margin: 0; padding: 0;">
+              <center>
+                <table border="0" cellpadding="0" cellspacing="0" width="580" style="border-radius:3px;">
+                                                <tr>
+                                                        <th style="padding:15px 0 15px 20px;text-align:left;vertical-align:top;background:#171E25;border-radius:4px 4px 0 0;" >
+                                                                <a href="http://get-simple.info/"><img src="http://get-simple.info/GSSW/gssw_assets/images/logo.png" alt="GetSimple CMS"></a>
+                                                        </th>
+                                                </tr>
+                                                <tr>
+                                                        <td style="background:#fff;border-bottom:1px solid #e1e1e1;border-right:1px solid #e1e1e1;border-left:1px solid #e1e1e1;font-size:13px;font-family:arial, helvetica, sans-serif;padding:20px;line-height:22px;" >
+                                                                <p>Your username is: <strong>admin</strong><br>Your new password is: <strong>drzeSC</strong><br>Login here: <a href="http://localhost/cms/admin/">http://localhost/cms/admin/</a></p><p><em>Thank you for using GetSimple!</em></p>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td style="padding-top:10px;font-size:10px;color:#aaa;line-height:14px;font-family:arial, 'helvetica neue', helvetica, serif" >
+                                                                <p class="meta">This is a system-generated email, please do not reply to it. For help or questions about GetSimple, please visit our <a href="http://get-simple.info/" style="color:#aaa;" >website</a>.<br />&copy; 2020 GetSimple CMS. All Rights Reserved.&nbsp;<a href="http://get-simple.info/start/privacy" style="color:#aaa;" >Privacy Policy</a>. </p>
+                                                        </td>
+                                                </tr>
+                                        </table>
+                                </center>
+                        </td>
+                </tr>
+        </table>
+        </body>
+        </html>
+
+
+--89728C3A7F.1589455648/Production-Server--
+
+From MAILER-DAEMON  Thu May 14 17:15:59 2020
+Return-Path: <>
+X-Original-To: www-data@atomic-nuclear.site
+Delivered-To: www-data@atomic-nuclear.site
+Received: by Production-Server (Postfix)
+        id D1A74C3A80; Thu, 14 May 2020 17:15:59 +0530 (IST)
+Date: Thu, 14 May 2020 17:15:59 +0530 (IST)
+From: MAILER-DAEMON@atomic-nuclear.site (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: www-data@atomic-nuclear.site
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+        boundary="A3A3FC3A7F.1589456759/Production-Server"
+Message-Id: <20200514114559.D1A74C3A80@Production-Server>
+
+This is a MIME-encapsulated message.
+
+--A3A3FC3A7F.1589456759/Production-Server
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host Production-Server.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<admin@atomic-nuclear.site>: unknown user: "admin"
+
+--A3A3FC3A7F.1589456759/Production-Server
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; Production-Server
+X-Postfix-Queue-ID: A3A3FC3A7F
+X-Postfix-Sender: rfc822; www-data@atomic-nuclear.site
+Arrival-Date: Thu, 14 May 2020 17:15:59 +0530 (IST)
+
+Final-Recipient: rfc822; admin@atomic-nuclear.site
+Original-Recipient: rfc822;admin@atomic-nuclear.site
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: X-Postfix; unknown user: "admin"
+
+--A3A3FC3A7F.1589456759/Production-Server
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <www-data@atomic-nuclear.site>
+Received: by Production-Server (Postfix, from userid 33)
+        id A3A3FC3A7F; Thu, 14 May 2020 17:15:59 +0530 (IST)
+To: admin@atomic-nuclear.site
+Subject: =?UTF-8?B?R2V0U2ltcGxlIFNldHVwIENvbXBsZXRl?=
+X-PHP-Originating-Script: 33:basic.php
+"MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+From: admin@example.com
+Reply-To: admin@example.com
+Message-Id: <20200514114559.A3A3FC3A7F@Production-Server>
+Date: Thu, 14 May 2020 17:15:59 +0530 (IST)
+
+
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+        <style>
+         table td p {margin-bottom:15px;}
+         a img {border:none;}
+        </style>
+        </head>
+        <body style="padding:0;margin:0;background: #f3f3f3;font-family:arial, 'helvetica neue', helvetica, serif" >
+        <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%" style="padding: 0 0 35px 0; background: #f3f3f3;">
+        <tr>
+            <td align="center" style="margin: 0; padding: 0;">
+              <center>
+                <table border="0" cellpadding="0" cellspacing="0" width="580" style="border-radius:3px;">
+                                                <tr>
+                                                        <th style="padding:15px 0 15px 20px;text-align:left;vertical-align:top;background:#171E25;border-radius:4px 4px 0 0;" >
+                                                                <a href="http://get-simple.info/"><img src="http://get-simple.info/GSSW/gssw_assets/images/logo.png" alt="GetSimple CMS"></a>
+                                                        </th>
+                                                </tr>
+                                                <tr>
+                                                        <td style="background:#fff;border-bottom:1px solid #e1e1e1;border-right:1px solid #e1e1e1;border-left:1px solid #e1e1e1;font-size:13px;font-family:arial, helvetica, sans-serif;padding:20px;line-height:22px;" >
+                                                                <p>Your username is: <strong>admin</strong><br>Your new password is: <strong>xPP3md</strong><br>Login here: <a href="https://192.168.8.3/cms/admin/">https://192.168.8.3/cms/admin/</a></p><p><em>Thank you for using GetSimple!</em></p>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td style="padding-top:10px;font-size:10px;color:#aaa;line-height:14px;font-family:arial, 'helvetica neue', helvetica, serif" >
+                                                                <p class="meta">This is a system-generated email, please do not reply to it. For help or questions about GetSimple, please visit our <a href="http://get-simple.info/" style="color:#aaa;" >website</a>.<br />&copy; 2020 GetSimple CMS. All Rights Reserved.&nbsp;<a href="http://get-simple.info/start/privacy" style="color:#aaa;" >Privacy Policy</a>. </p>
+                                                        </td>
+                                                </tr>
+                                        </table>
+                                </center>
+                        </td>
+                </tr>
+        </table>
+        </body>
+        </html>
+
+
+--A3A3FC3A7F.1589456759/Production-Server--
+
+Production-Server : Dec  8 14:43:46 : iyer : user NOT in sudoers ; TTY=pts/76 ; PWD=/ ; USER=root ; COMMAND=autoadmin
