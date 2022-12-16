@@ -840,4 +840,67 @@ Date: Thu,  8 Dec 2022 14:43:46 +0530 (IST)
 
 Production-Server : Dec  8 14:43:46 : iyer : user NOT in sudoers ; TTY=pts/76 ; PWD=/ ; USER=root ; COMMAND=autoadmin
 
+# 12 Dec trying to acess the range once more
 
+not able to maintain stable connection
+
+### python string format vulnerability
+string format vuln in python `{uploaded_file.__globals__}`
+
+### wifi ninja fu
+Wi-Ninja-Fu
+
+	Desc : See what we can De-Authenticate.
+
+	Flag : flag{88888888}
+
+	Steps : 
+
+		1. Check the pkt capture file & Analyze the handshake packets
+		2. Crack the key using aircrack-ng
+
+			aircrack-ng shipin.cap -w /usr/share/wordlists/rockyou.txt
+
+		3. Decrypt the wi-fi packets using the obtained key "Edit --> Preferences --> Protocols --> IEEE802.11 --> Edit"
+		4. Obtain flag{88888888}
+
+### It is very urgent!!!
+
+	Desc : Urgently find the flag, utilize Data Extraction.
+
+	Flag : CTF{And_You_Thought_It_Was_In_The_Picture}
+
+	Steps:
+
+		1. Open it in Wireshark & then follow the TCP protocol to get the URG Flag
+		2. Extract the URG bit using the following data extraction command:
+
+	          	tshark -r <.pcap> -T fields -e  tcp.urgent_pointer | egrep -vi "^0$" | tr '\n' ','
+
+		3. Sanitize the data (remove the `0` field and replace the newline with `,`) & convert it into readable ASCII format
+
+			array =[67,84,70,123,65,110,100,95,89,111,117,95,84,104,111,117,103,104,116,95,73,116,95,87,97,115,95,73,110,95,84,104,101,95,80,105,99,116,117,114,101,125]
+print("".join([chr(x) for x in array]))
+		
+	
+		4. Add the grouped byte stream
+		5. Obtain the "flag{aha!_you_found_it!}"
+
+### Please take me out.
+
+	Desc : Cure & analyze me 
+
+	Flag : flag{aha!_you_found_it!}
+
+	Steps:
+
+		1. Fix the packet capture file [http://f00l.de/hacking/pcapfix.php]
+		2. Open it in Wireshark & then follow the TCP Packets
+
+		NOTE : From tcp.stream eq 29 to tcp.stream eq 41, it will show the words "where is the flag?"
+
+		3. Map the pattern which have "Identification"
+		4. Add the grouped byte stream
+		5. Obtain the "flag{aha!_you_found_it!}"
+
+### 
