@@ -100,6 +100,12 @@ WalletAddress: 0x7b01A03D5BF1a8f706bCa6E081364603dD7e512a
 Key: 0x0fc5f59fee084134077087aa7615382199185732bf4748ae1cfd11f210fe6496
 ```
 
-# External pentesting
+# using CEWL
 
+cewl -d 3 -m 5 -w our-story.txt https://www.thepastamentors.com/our-story
+cewl -d 2 -m 5 -w menu.txt https://www.thepastamentors.com/menu
+
+[](./combined.txt)
+
+# using cve python based
 
