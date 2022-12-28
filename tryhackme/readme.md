@@ -4,4 +4,21 @@ https://tryhackme.com/room/adenumeration
 
 https://tryhackme.com/room/breachingad
 
-systemd-resolve --interface breachad --set-dns 10.200.26.101 --set-domain za.tryhackme.com
+# things to do in tryhack me
+
+    hackthebox finish all easy boxes and do some pro labs (last is more for fun)
+
+    make sure to be able to go though every box on TJ nulls list
+
+    Tiberius priv escalation course (Linux and windows)
+
+    make sure to write good notes and writeups (also publish them on git pages for further reference)
+
+    read though a pdf and video course similar to oscp
+
+    have a decent Kali machine setup and prepared
+
+
+what is tiberius privilege escalation course
+
+
