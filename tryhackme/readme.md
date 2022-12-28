@@ -21,4 +21,32 @@ https://tryhackme.com/room/breachingad
 
 what is tiberius privilege escalation course
 
+# Hack the box book
+
+SQL truncation attack , adding things to the row whicjh is longer than what is required and adding a row 
+
+things one can try in a site:
+
+```
+
+    Looking for SQLi in all the forms.
+    Looking for XSS in all the forms.
+    Looking for any kind of XSRF vulnerabilities in the various GETs and POSTs.
+
+```
+
+XSS for file read
+
+```js
+<script>x=new XMLHttpRequest;x.onload=function(){document.write(this.responseText)};x.open("GET","file:///etc/passwd");x.send();</script>
+
+```
+
+after getting in we can get ssh key
+
+and root had a logrotate exploit
+
+
+
+
 
