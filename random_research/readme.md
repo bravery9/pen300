@@ -67,3 +67,50 @@ and build the project.
 f. Decoy.docx present inside the installation folder will be converted to an iso file to bypass
 Mark of the Web.
 ```
+
+# packet traveling series
+
+https://www.youtube.com/watch?v=rYodcvhh7b8
+
+arp table - maps id to mac - layer 3
+mac address - maps switchport to mac - layer 2
+routing table - ip to interfaces 
+
+routing table populated prior to traffic flow based on the ip address of interfaces. 
+
+http://www.practicalnetworking.net/series/packet-traveling/packet-traveling/
+
+packet travelling from one host to another
+
+![](./host_to_host_1.png)
+
+when the host send an arp request to learn the default gateway mac address then the switch learns the mac of aa and updates its mac table
+ARP on a switch is flooededto all connected ports of the switch. the hosts whose request is for would reply.
+
+router when recieves the ARP request from switch would update its ARP table andd would map host ip to it hostname and would generate an ARP response
+
+which then switch forward to the host and the host updates its arp table
+
+layer 3 ip address is to get the data from end to end while l2 header is to send the data in the same network to the gateway
+
+![](./host_to_host_2.png)
+
+on recieving the packet the router would strip the packet of l2 header
+
+![](./host_to_host_3.png)
+
+when the packet reaches the router and sends an arp request for the destination host ip
+
+![](./host_to_host_4.png)
+
+the way back would be easier as the tablles are already generated
+
+
+
+
+
+
+
+
+
+
