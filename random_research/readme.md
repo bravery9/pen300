@@ -105,6 +105,13 @@ when the packet reaches the router and sends an arp request for the destination 
 
 the way back would be easier as the tablles are already generated
 
+host A first strips the l2 layer then the l3 layer and then recieves the data
+
+data is encapsulated into l3 is first then l2 header is placed
+
+other courses
+
+http://www.practicalnetworking.net/
 
 
 
