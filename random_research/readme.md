@@ -202,10 +202,29 @@ creating a python based shell transfer code dns sniffer-
 
 https://0xdf.gitlab.io/2019/03/09/htb-ethereal-shell.html
 
+`nsloopup`
 
+`netsh advfirewall` to dump firewall rules on windows
 
+the other way to find is using wfuzz and fuff and quite command
 
+`rlwrap` for history
 
+`dir /a` for hidden folders
+
+`icacls` to give permissions
+
+# Easiest way for exfilteration of data
+
+we can base64 encode data and then decode using base64 -d
+
+# poison lnk file
+
+select properties of the windows vm -> we can edit the target of the shortcut
+
+`cmd /c openssl`
+
+# LNKUp is a lnk payloas generator written in python
 
 
 
