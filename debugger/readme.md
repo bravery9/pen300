@@ -21,4 +21,10 @@ https://samsclass.info/127/proj/pDC12olly.htm
 
 teaches basics of patching
 
+# simple reverse engineerings
 
+https://erichokanson.me/2015/04/17/reverse-engineering-with-ollydbg/
+
+https://www.youtube.com/watch?v=GdzkRwoizFw
+
+search for strings and change
