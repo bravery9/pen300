@@ -224,10 +224,6 @@ select properties of the windows vm -> we can edit the target of the shortcut
 
 `cmd /c openssl`
 
-# LNKUp is a lnk payloas generator written in python
-
-
-
 
 
 
