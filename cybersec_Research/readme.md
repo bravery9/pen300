@@ -15,3 +15,7 @@ todo
 # analysing a multi stager : case study of qbot
 
 https://offensivecraft.wordpress.com/2022/12/28/analysing-a-multi-stager-a-case-study-of-qbot/
+
+# analysis of CVE 2017 11882 exploit
+
+https://unit42.paloaltonetworks.com/unit42-analysis-of-cve-2017-11882-exploit-in-the-wild/
