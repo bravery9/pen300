@@ -13,6 +13,17 @@ int main(void){
 }
 ```
 
+```
+gcc windows.c               
+windows.c:1:10: fatal error: windows.h: No such file or directory
+    1 | #include <windows.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+                          
+```
+
+need to use a windows client for this.
+
 before a function is used libraries will be loaded in memory and their function addresses will be referenced in the import address table (IAT)
 
 If we look into our import table (I used CFF Explorer to do it) we can see several imported DLLs and our suspicious function (WinExec)
