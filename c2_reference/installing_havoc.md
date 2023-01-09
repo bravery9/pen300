@@ -29,7 +29,7 @@ Tried using havoc with darkarmour it runs it is caught by windows defender
 ![](./havoc_unencrypted.png))
 
 and then using darkarmour evasion was successfull
-https://github.com/bats3c/darkarmour
+https://github.com/bats3c/darkarmour - can we add AES to darkarmour
 ![](./windows_defender_havoc.png)
 
 then created an iso file using packMyPayload
@@ -37,7 +37,10 @@ https://github.com/mgeeky/PackMyPayload
 ![](./iso_smartscreen_bypass.png)
 
 2. how to use multiple vps's
-3. eviltwin
+
+3. metatwin
+https://github.com/threatexpress/metatwin
+
 4. dll persistance, creating a service
 5. create a shellcode for all this and then integrate it with darkarmour
 6. generate hta to create something similar to linkzip exploit
@@ -94,3 +97,4 @@ then again xoring 7 times and creating a exes
 ![](./xor7_smartscreen.png)
 
 creating lnk file.
+
