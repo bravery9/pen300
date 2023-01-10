@@ -82,6 +82,15 @@ tried doing it through powershell -
 
 this detects can we put it in hta to create a shortcut?
 
+
+https://www.x86matthew.com/view_post?id=embed_exe_lnk
+
+https://github.com/knight0x07/Lnk2Vbs
+
+This works
+
+![](./lnk2vbs.png)
+
 ### detection
 
 with cloud based protection after couple of downloads the file is getting detected, lets try for in memory exection apart from xor?

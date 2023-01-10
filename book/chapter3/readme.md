@@ -196,7 +196,7 @@ Links             : {}
 ParsedHtml        : mshtml.HTMLDocumentClass
 RawContentLength  : 131
 ```
-
+-
 # Keeping up appearances
 
 how to base64encode content using macro
@@ -244,7 +244,6 @@ End Function
 but getting error executing
 
 ![](./problem_with_win32_vba.png)
-
 
 https://www.aeternusconsulting.com/how-to-use-windows-api-in-vba/#:~:text=Function%20GetSystemDirectory%20Lib%20%E2%80%9Ckernel32%E2%80%9D%3A%20This%20tells%20VBA%20that,library%2C%20the%20Windows%20API%E2%80%99s%20actual%20name%20is%20GetSystemDirectoryA.
 
