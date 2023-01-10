@@ -36,6 +36,8 @@ then created an iso file using packMyPayload
 https://github.com/mgeeky/PackMyPayload
 ![](./iso_smartscreen_bypass.png)
 
+but it only executes from a drive E: privilege. more modules for privilege ecalation must be looked into.
+
 2. how to use multiple vps's
 3. eviltwin
 4. dll persistance, creating a service
