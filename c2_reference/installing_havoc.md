@@ -91,6 +91,10 @@ This works
 
 ![](./lnk2vbs.png)
 
+code for download and execute working
+
+![](./download_and_exec.vbs)
+
 ### detection
 
 with cloud based protection after couple of downloads the file is getting detected, lets try for in memory exection apart from xor?
@@ -108,4 +112,7 @@ then again xoring 7 times and creating a exes
 ![](./xor7_smartscreen.png)
 
 creating lnk file.
+
+> checkout how to integrate python with C
+
 
