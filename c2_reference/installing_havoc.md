@@ -40,7 +40,6 @@ git clone https://github.com/assume-breach/Home-Grown-Red-Team.git
 
 we can also use harriot
 
-
 then created an iso file using packMyPayload
 https://github.com/mgeeky/PackMyPayload
 ![](./iso_smartscreen_bypass.png)
@@ -52,10 +51,11 @@ but it only executes from a drive E: privilege. more modules for privilege ecala
 3. metatwin
 https://github.com/threatexpress/metatwin
 
-and SigThief
+and SigThief - this is  already done by Harriot.
 
-4. dll persistance, creating a service
-5. create a shellcode for all this and then integrate it with darkarmour
+4. dll persistance, creating a service - not done
+
+5. create a shellcode for all this and then integrate it with darkarmour - integrated with Harriot
 
 If you’re doing this in a real world pentest, put the shellcode through Harriet as we did before, use Donut to turn it back into shellcode and then inject it for more OPSEC
 
@@ -129,15 +129,60 @@ then again xoring 7 times and creating a exes
 
 creating lnk file.
 
-### TODO
+### TODO completion 1
 
 1. combining with harriot 
 https://assume-breach.medium.com/home-grown-red-team-getting-system-on-windows-11-with-havoc-c2-cc4bb089d22
 
-2. Check what service payload is doing
+![](./lnk2vbs_howegrown_sek7.png)
 
-3. Sektor7 dll injection with havoc dll
+2. Check what service payload is doing : not done.
+
+3. Sektor7 dll injection with havoc shellcode
+
+all sektor7 techniques are put here: https://github.com/assume-breach/Home-Grown-Red-Team. This works with AES encryption and havoc shellcode.
 
 4. LNK exploit
 
+Able to create a malicious LNK using LnkToVbs. LNK exploit works however, when .lnk file is downloaded it doesnt execute directly. So need to package it into a zip. however while packaging to a zip we dont get download to disk permission while looking at the archive. So it is necessary to use an in memory execution module.
+
+Let try and use DOtNetToJs to create a vbs file
+`DotNetToJScript.exe ExampleAssembly.dll --lang=vbscript --ver=v4 -o demo1.vbs`
+
+in C# we can get the outut from Harriot and then use donut to convert it into a shellcode and then again convert into a vbs script to be executed witht the .LNK
+
+two repos that do the same job are: 
+1.  https://github.com/Accenture/CLRvoyance
+2.  https://github.com/TheWover/donut
+
+not able to get connection back after CLRvoyance
+
+> delivery mechanism of linked exploit
+
+
 5. checkout how to integrate python with C
+
+
+things to try to create a lnk file :
+
+1. creating a vb script that executes in memory
+
+2. creating a dotnettojs C# program  which does AES encryption
+
+3. powershell to lnk
+    encoded powershell in vbscript
+
+    https://stackoverflow.com/questions/44693317/is-it-possible-to-run-powershell-code-from-vbscript
+
+    ```
+    $string = {(Get-WindowsFeature).Where{$PSItem.Installed}}.ToString()
+
+    $encodedcommand = [Convert]::ToBase64String([Text.Encoding]::Unicode.GetBytes($string))
+
+    powershell.exe -EncodedCommand $encodedcommand
+    ```
+
+
+4. exe to lnk
+
+
