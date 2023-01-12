@@ -56,6 +56,10 @@ and SigThief
 
 4. dll persistance, creating a service
 5. create a shellcode for all this and then integrate it with darkarmour
+
+If you’re doing this in a real world pentest, put the shellcode through Harriet as we did before, use Donut to turn it back into shellcode and then inject it for more OPSEC
+
+
 6. generate hta to create something similar to linkzip exploit
 
 https://www.ired.team/offensive-security/code-execution/t1170-mshta-code-execution
@@ -102,6 +106,11 @@ This works
 
 ![](./lnk2vbs.png)
 
+
+code for download and execute working
+
+![](./download_and_exec.vbs)
+
 ### detection
 
 with cloud based protection after couple of downloads the file is getting detected, lets try for in memory exection apart from xor?
@@ -130,3 +139,5 @@ https://assume-breach.medium.com/home-grown-red-team-getting-system-on-windows-1
 3. Sektor7 dll injection with havoc dll
 
 4. LNK exploit
+
+5. checkout how to integrate python with C
