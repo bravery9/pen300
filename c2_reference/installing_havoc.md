@@ -24,6 +24,9 @@ able to get a connect back. But unable ot evade antivirus.
 
 next things
 
+windows smartscreen is integrated with edge and also is invoked once before execution.
+Service dll is flagged both times.
+
 1. custom payload
 Tried using havoc with darkarmour it runs it is caught by windows defender
 ![](./havoc_unencrypted.png))
@@ -31,6 +34,12 @@ Tried using havoc with darkarmour it runs it is caught by windows defender
 and then using darkarmour evasion was successfull
 https://github.com/bats3c/darkarmour - can we add AES to darkarmour
 ![](./windows_defender_havoc.png)
+
+
+git clone https://github.com/assume-breach/Home-Grown-Red-Team.git
+
+we can also use harriot
+
 
 then created an iso file using packMyPayload
 https://github.com/mgeeky/PackMyPayload
@@ -42,6 +51,8 @@ but it only executes from a drive E: privilege. more modules for privilege ecala
 
 3. metatwin
 https://github.com/threatexpress/metatwin
+
+and SigThief
 
 4. dll persistance, creating a service
 5. create a shellcode for all this and then integrate it with darkarmour
@@ -109,3 +120,13 @@ then again xoring 7 times and creating a exes
 
 creating lnk file.
 
+### TODO
+
+1. combining with harriot 
+https://assume-breach.medium.com/home-grown-red-team-getting-system-on-windows-11-with-havoc-c2-cc4bb089d22
+
+2. Check what service payload is doing
+
+3. Sektor7 dll injection with havoc dll
+
+4. LNK exploit

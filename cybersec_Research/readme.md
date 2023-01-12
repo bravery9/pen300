@@ -24,3 +24,6 @@ https://unit42.paloaltonetworks.com/unit42-analysis-of-cve-2017-11882-exploit-in
 
 https://github.com/horsicq/Detect-It-Easy
 
+# evilginx
+
+https://janbakker.tech/how-to-set-up-evilginx-to-phish-office-365-credentials/
