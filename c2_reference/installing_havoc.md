@@ -163,7 +163,7 @@ not able to get connection back after CLRvoyance
 5. checkout how to integrate python with C
 
 
-things to try to create a lnk file :
+## things to try to create a lnk file :
 
 1. creating a vb script that executes in memory
 
@@ -184,5 +184,24 @@ things to try to create a lnk file :
 
 
 4. exe to lnk
+
+## Converting a havoc bin to C# shellcode
+
+found conversion into a C shellcode
+
+https://gist.github.com/superkojiman/11164279
+![](./bin2c_shellcode.py)
+
+conversion into a C# shellcode
+![](./bin2cs_shellcode.py)
+
+The converted shellcode  is not working in shellcode runner
+
+https://github.com/TheWover/donut/blob/master/docs/2019-08-21-Python_Extension.md
+
+study lnk exploit
+
+
+
 
 
