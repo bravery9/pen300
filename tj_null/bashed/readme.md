@@ -102,6 +102,7 @@ trying all weird combinations but unableto get the script accross
 so bashed shall remain unconquered.
 
 looking for more ad machines. sure.
+can i really work hard
 
 
 
