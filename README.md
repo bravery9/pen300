@@ -1,5 +1,7 @@
 # pen300
 
+A repo for pen300 prep.
+
 `DISCLAIMER: THIS REPO CONTAINS CODE THAT MAYBE FLAGGED AS MALWARE BY WINDOWS DEFENDER. PEN300 is about malware evasion techniques. what else did you expect? :) ITS BETTER TO ADD EXCLUSIONS FOR THIS FOLDER BEFORE OPENING THE REPO IF YOU KNOW WHAT YOU ARE DOING.`
 
 Repository for doing pen300 exercises.
