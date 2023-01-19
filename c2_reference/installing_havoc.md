@@ -325,6 +325,16 @@ using evil clippy for stomping
 
 https://github.com/outflanknl/EvilClippy
 
+not able to install it 
+
+```
+Hey @rtgjeg , try to install Roslynator 2022 extension, helped me.
+Launch VS2022 -> Extensions -> Search for Roslynator 2022 -> install it.
+```
+
+need to try
+
+
 
 
 
