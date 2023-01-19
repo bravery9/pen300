@@ -321,6 +321,10 @@ however even mshta command to download using certutil is flagged.
 
 I need look for means to execute the test.html using mshta without being flagged.
 
+using evil clippy for stomping
+
+https://github.com/outflanknl/EvilClippy
+
 
 
 
