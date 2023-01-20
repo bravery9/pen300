@@ -332,7 +332,19 @@ Hey @rtgjeg , try to install Roslynator 2022 extension, helped me.
 Launch VS2022 -> Extensions -> Search for Roslynator 2022 -> install it.
 ```
 
-need to try
+
+
+and also 
+
+https://lowery.tech/building-a-custom-shellcode-stager-with-process-injection-to-bypass-windows-defender/
+
+need to check why unamers code is not working need to try to understand unamer's code.
+
+https://github.com/unamer/CVE-2017-11882
+
+
+
+
 
 
 
