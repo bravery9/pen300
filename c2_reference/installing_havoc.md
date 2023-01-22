@@ -344,7 +344,61 @@ https://github.com/unamer/CVE-2017-11882
 
 Resources to check out : https://www.netskope.com/blog/malicious-office-documents-multiple-ways-to-deliver-payloads
 
-trying to make a local version of team server
+trying to make a local version of team server.
+Kali linux is detected as virus for some reason.
+
+## Trying to create vba macro
+
+https://www.docguard.io/running-shellcode-through-windows-callbacks-using-vba-macro/
+
+1. using DOCguard
+
+https://www.docguard.io/ - to check for IOC's on docguard
+
+2. Using callbacks to execute shellcode
+
+https://github.com/ChaitanyaHaritash/Callback_Shellcode_Injection
+
+A callback is code that helps an unmanaged DLL function complete a task.
+
+https://marcoramilli.com/2022/06/15/running-shellcode-through-windows-callbacks/
+
+able to get clac to work through [](./popcalc.c)
+
+![](2023-01-22-12-16-14.png)
+
+even though the program doesn't execute completely.
+
+but maybe used to execute shellcode.
+
+also discussed here for vba code: http://ropgadget.com/posts/abusing_win_functions.html
+
+encoding this in a vba code using trigen:
+
+https://github.com/karttoon/trigen
+
+can we integrate vba AES encode :
+
+[](./vba_aes.vb)
+
+then using evilclippy for vba stomping.
+
+can also use .net C# functions
+https://ppn.snovvcrash.rocks/red-team/maldev/code-injection
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
