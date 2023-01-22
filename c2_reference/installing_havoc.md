@@ -344,6 +344,8 @@ https://github.com/unamer/CVE-2017-11882
 
 Resources to check out : https://www.netskope.com/blog/malicious-office-documents-multiple-ways-to-deliver-payloads
 
+trying to make a local version of team server
+
 
 
 
