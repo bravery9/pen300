@@ -386,6 +386,9 @@ then using evilclippy for vba stomping.
 can also use .net C# functions
 https://ppn.snovvcrash.rocks/red-team/maldev/code-injection
 
+also try sharpzip runner.
+
+
 
 
 
