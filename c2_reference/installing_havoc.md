@@ -388,27 +388,31 @@ https://ppn.snovvcrash.rocks/red-team/maldev/code-injection
 
 also try sharpzip runner.
 
+# trying havoc shellcode injection with the wrong function call method
+
+using havoc bin file and my shellcode convertor using with c.
+
+Evades static analysis of Kaspersky and Defender
+and trend micro.
+
+![](./kaspersky_clean.png)
+
+But on runtime it is getting detected.
+
+however need to try to do harriet to pe to shellcode conversion if possible
+
+using pe2_shellcode we get an exe which may work
+
+https://github.com/hasherezade/pe_to_shellcode/releases/tag/v1.2
 
 
+### use of macropack
 
+https://blog.sevagas.com/Launch-shellcodes-and-bypass-Antivirus-using-MacroPack-Pro-VBA-payloads
 
+he also has a blog 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+https://blog.sevagas.com/
 
 
 
