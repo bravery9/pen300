@@ -298,6 +298,11 @@ when trying to load demon_ht through mshta it evades detection as well however t
 
 ![](./error_in_mshta_powershell.png)
 
+## payload delivery working with certutil
+
+![](./before_enable_editing.png)
+
+![](./after_enable_editing.png)
 
 ## problems with mshat dropper 
 
@@ -306,7 +311,7 @@ objshell.run - down't seems to run always
 mshta dropper does not work with
 
 
-1. certutil doesnt work
+1. certutil doesnt work without using cmd as well.
 2. Curl doesnt work
 3. powershell normal - in memory execution
     > powershell encoding should we check?
@@ -321,7 +326,11 @@ however even mshta command to download using certutil is flagged.
 
 I need look for means to execute the test.html using mshta without being flagged.
 
+# new approach using vba files
 
+```
+Havoc.exe -> harriot.dll -> shellcode-dll-injection -> dotnettojs -> vba stomping
+```
 
 
 
