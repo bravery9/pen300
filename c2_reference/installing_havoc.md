@@ -427,4 +427,30 @@ C# shells are good
 
 ![](./cs_shell_for_rev_connect.cs)
 
+The c# reverse shell given here is getting detected.
+
+### RTO
+https://v3ded.github.io/misc/certified-red-team-operator-crto-review
+
+https://github.com/nettitude/PoshC2
+
+https://github.com/byt3bl33d3r/SILENTTRINITY
+
+look at his tools : https://github.com/plackyhacker
+
+https://github.com/EgeBalci
+
+# TODO
+
+1. try macropack
+2. vba macro obfuscation
+3. vba script obfuscation
+
+
+
+
+
+
+
+
 
