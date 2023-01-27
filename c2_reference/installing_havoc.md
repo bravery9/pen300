@@ -448,6 +448,12 @@ https://github.com/EgeBalci
 
 clarity over concepts?
 
+https://github.com/mandiant/OfficePurge
+
+vba stomping than purging
+
+
+
 
 
 
