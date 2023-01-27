@@ -446,6 +446,8 @@ https://github.com/EgeBalci
 2. vba macro obfuscation
 3. vba script obfuscation
 
+clarity over concepts?
+
 
 
 
