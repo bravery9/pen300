@@ -1,4 +1,4 @@
-https://docker-curriculum.com/
+git https://docker-curriculum.com/
 
 to test whether the docker is working correctly
 `docker run hello-world`
@@ -222,14 +222,3 @@ root@faad191a73d6:/# history
    48  cd ..
    49  history
 ```
-
-
-
-
-
-
-
-
-
-
-
