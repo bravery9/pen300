@@ -477,9 +477,7 @@ can we try evilclippy here
 
 https://github.com/outflanknl/EvilClippy
 
-
-
-
+macropack and stomping, trying on demon_ht.exe
 
 
 
