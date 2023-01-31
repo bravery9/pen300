@@ -509,6 +509,39 @@ OfficePurge.exe -d word -f .\malicious.doc -l
 OfficePurge.exe -d word -f .\malicious.doc -m NewMacros
 ```
 
+it lists follwoing macros
+
+```
+C:\Users\HP\Downloads>OfficePurge.exe -d word -f d.doc -l
+
+[*] VBA module name: ThisDocument
+
+[*] VBA module name: efqgayeex
+
+[*] VBA module name: oxkwwfqth
+
+[*] VBA module name: sxspbrccg
+
+[*] VBA module name: ucinlvbsx
+
+[*] Finished listing modules
+```
+
+office purging works and also gives us a reverse shell. Just need to test the effectiveness of evading antivirus.
+
+able to evade defender for sometime
+but caught with kaspersky
+
+![](2023-01-31-17-02-15.png)
+
+![](2023-01-31-17-00-56.png)
+
+![](2023-01-31-17-01-15.png)
+
+![](2023-01-31-17-01-35.png)
+
+![](2023-01-31-17-02-50.png)
+
 
 
 
