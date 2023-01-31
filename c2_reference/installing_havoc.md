@@ -542,6 +542,11 @@ but caught with kaspersky
 
 ![](2023-01-31-17-02-50.png)
 
+# using one note for exploitation
+
+creedfarmone@outlook.com
+
+https://blog.sevagas.com/IMG/pdf/redteam_with_onenote.pdf
 
 
 
