@@ -436,7 +436,7 @@ https://github.com/nettitude/PoshC2
 
 https://github.com/byt3bl33d3r/SILENTTRINITY
 
-look at his tools : https://github.com/plackyhacker
+look at his tools : https://github.com/plackyhacker 
 
 https://github.com/EgeBalci
 
@@ -547,6 +547,16 @@ but caught with kaspersky
 creedfarmone@outlook.com
 
 https://blog.sevagas.com/IMG/pdf/redteam_with_onenote.pdf
+
+# todo 
+
+can we try to use mshta instead of other things
+
+mshta with javascript for obfuscation
+
+http://blog.sevagas.com/?Hacking-around-HTA-files
+
+
 
 
 
