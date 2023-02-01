@@ -558,5 +558,23 @@ http://blog.sevagas.com/?Hacking-around-HTA-files
 
 
 
+If you run the html file with mshta.exe, your HTA application will be found, and run.
+
+### putting pictures in hta
+
+`copy /b picture.ico+test.hta test_with_icon.hta`
+
+<HTA:APPLICATION icon="#" />
+
+     copy /b %windir%\system32\calc.exe+test.hta calc2.exe
+     calc2.exe  -> Runs good old calc
+     mshta %cd%\calc2.exe  -> Execute HTA script!
+
+secod approach through lnk file
+
+
+
+
+
 
 
