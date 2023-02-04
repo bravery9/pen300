@@ -620,6 +620,16 @@ magic dropper works am able to embed the png in lnk file
 
 can we embed some other exe.
 
+### using demiguise to hide malicious payloads
+
+https://github.com/nccgroup/demiguise
+
+doesnt work out of the box
+
+
+
+
+
 
 
 
