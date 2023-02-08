@@ -17,6 +17,12 @@ using dirbuster
 
 can use exif on the image
 
+![](20230206125852.png)  
+
+https://0xdf.gitlab.io/2021/05/25/htb-shocker.html
+
+
+
 
 
 
