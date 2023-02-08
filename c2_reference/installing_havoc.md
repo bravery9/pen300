@@ -636,6 +636,12 @@ able to deliver but metasploit calc is caught by defender
 
 `./Ivy -stageless -Ix64 test64.bin -P Inject -O stageless.js`
 
+### TODO
+1. use lnk explioit with a executable
+2. look at assume-breach directory
+3. deliver payload using go binary
+
+
 
 
 
