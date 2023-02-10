@@ -636,6 +636,40 @@ able to deliver but metasploit calc is caught by defender
 
 `./Ivy -stageless -Ix64 test64.bin -P Inject -O stageless.js`
 
+### TODO
+1. use lnk explioit with a executable
+2. look at assume-breach directory
+3. deliver payload using go binary
+4. how does chrome block a file research
+
+
+
+### looking at assume breach
+
+`https://github.com/assume-breach/Home-Grown-Red-Team/`
+
+1. covenant C2 randomizer
+2. escape my lasagna 
+
+talks about lasagna project for extracting passwords for retrieval of passwords
+
+https://github.com/AlessandroZ/LaZagne/releases/tag/2.4.3
+
+3. using highborn
+
+https://github.com/assume-breach/Home-Grown-Red-Team/tree/main/HighBorn
+
+for dll execution
+
+to do
+
+4. inside man for payload exection
+
+
+
+
+
+
 
 
 
