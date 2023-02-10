@@ -661,10 +661,23 @@ https://github.com/assume-breach/Home-Grown-Red-Team/tree/main/HighBorn
 
 for dll execution
 
-to do
+> highborn sharpsploit not working not compiling to
 
-4. inside man for payload exection
 
+
+4. 11882 exploit
+
+### Using lnk to exploit
+
+keep on hold how ot make 11882 work
+
+### 11882 exploit
+
+https://github.com/Ridter/CVE-2017-11882/blob/master/Command109b_CVE-2017-11882.py
+
+working on windows shellcode 
+
+https://idafchev.github.io/exploit/2017/09/26/writing_windows_shellcode.html
 
 
 
