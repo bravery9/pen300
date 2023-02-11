@@ -26,8 +26,46 @@ in the images we see that ther re is this directory
 
 feroxbuster --url http://10.10.10.68/uploads -x php
 
+```
+┌──(kali㉿kali)-[~]
+└─$ feroxbuster --url http://10.10.10.68/uploads -x php
+
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.7.3
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://10.10.10.68/uploads
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt
+ 👌  Status Codes          │ [200, 204, 301, 302, 307, 308, 401, 403, 405, 500]
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ feroxbuster/2.7.3
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
+ 💲  Extensions            │ [php]
+ 🏁  HTTP methods          │ [GET]
+ 🔃  Recursion Depth       │ 4
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+301      GET        9l       28w      312c http://10.10.10.68/uploads => http://10.10.10.68/uploads/
+403      GET       11l       32w      290c http://10.10.10.68/.php
+[####################] - 8m     60000/60000   0s      found:2       errors:89     
+[####################] - 8m     60000/60000   113/s   http://10.10.10.68/uploads/ 
+
+```
 
 ![](20230211130654.png)  
 
 no permission to upload it says
 
+
+after some more busting found at
+
+![](20230211133302.png)  
+
+now we need to find vuln in the code
+
+![](20230211140234.png)  
+
+problem with uploading shell
