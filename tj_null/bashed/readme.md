@@ -99,5 +99,9 @@ in my case however nc  return connect momentarily
 
 trying all weird combinations but unableto get the script accross
 
-so bashed shall remain unconquered
+so bashed shall remain unconquered.
+
+looking for more ad machines
+
+
 
