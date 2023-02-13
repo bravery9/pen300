@@ -680,6 +680,31 @@ working on windows shellcode
 https://idafchev.github.io/exploit/2017/09/26/writing_windows_shellcode.html
 
 
+need to do
+
+# Creating a network of redirectors
+
+we can use socat
+
+`socat TCP-LISTEN:443,fork TCP:www.rotpotato.com:8000`
+
+this tells the server to forward all traffic coming to 443 to port 8000 of www.rotpotato.com.
+
+creating teamserver out of any ubunut box:
+[](./creating_teamserver.sh)
+
+there is always the issue of go server 1.18 
+
+from : https://go.dev/dl/
+`wget https://go.dev/dl/go1.20.linux-amd64.tar.gz`
+
+`tar -xf go1.20.linux-amd64.tar.gz go/`
+
+upgrading go version
+
+`https://www.golinuxcloud.com/upgrade-go-version/`
+
+
 
 
 
