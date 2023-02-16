@@ -93,3 +93,9 @@ target was vulnerable for a brief while t ms17
 ```
 
 but then after tha it just shows that target isnt vulnerable
+
+![](2023-02-16-03-36-20.png)
+
+the trick was smb exploit eternalblue
+
+
