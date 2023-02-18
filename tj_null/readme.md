@@ -7,3 +7,10 @@ https://www.netsecfocus.com/oscp/2021/05/06/The_Journey_to_Try_Harder-_TJnull-s_
 ![](20230206124505.png)  
 
 ![](2023-02-16-02-04-45.png)
+
+Bashed
+Blue
+dc-9
+Devel
+shocker
+Optimum
