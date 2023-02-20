@@ -99,12 +99,11 @@ in my case however nc  return connect momentarily
 
 trying all weird combinations but unableto get the script accross
 
-so bashed shall remain unconquered.
+so bashed shall ressmain unconquered.
 
 looking for more ad machines. sure.
 can i really work hard. oscp and osep.
 Dec 6
-
 
 
 

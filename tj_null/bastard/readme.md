@@ -115,3 +115,6 @@ File written: http://10.10.10.9/dixuSOspsOUU.php
 
 unable to run nc connect commands
 
+Tried Drupalgeddon2 but was offline
+
+
