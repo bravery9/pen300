@@ -16,3 +16,4 @@ Devel - not done ftp
 shocker - done
 Optimum- not done ms16-32
 squashed - not done
+Granny - done
