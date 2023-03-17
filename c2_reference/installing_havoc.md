@@ -663,8 +663,6 @@ for dll execution
 
 > highborn sharpsploit not working not compiling to
 
-
-
 4. 11882 exploit
 
 ### Using lnk to exploit
@@ -706,8 +704,6 @@ upgrading go version
 
 
 harreit getting caught
-
-
 
 
 

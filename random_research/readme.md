@@ -224,6 +224,19 @@ select properties of the windows vm -> we can edit the target of the shortcut
 
 `cmd /c openssl`
 
+# trying to find novel malware persistenece within Esxi Hypervisors
+
+REcently mandian released a report in which there is a malware which will send commands to the hypervisor which will be routed to the guest VM for execution
+
+The source is through vsphere bundles
+
+also called VIBs
+
+
+
+
+
+
 
 
 
