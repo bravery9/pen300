@@ -69,3 +69,4 @@ BUNDLE_HTTPS://RUBYGEMS__ORG/: "henry:Q3c1AqGHtoI0aXAYFH"
 ```
 
 sudo /usr/bin/ruby /opt/update_dependencies.rb
+

@@ -230,7 +230,7 @@ REcently mandian released a report in which there is a malware which will send c
 
 The source is through vsphere bundles
 
-also called VIBs
+also called VIBs to install multiple backdoors on EsXi hypervisors
 
 
 
